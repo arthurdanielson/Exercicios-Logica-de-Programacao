@@ -1,0 +1,27 @@
+Arthur Danielson Viana
+12/06/2024
+
+2) Analise os algoritmos abaixo e diga o que será impresso na tela ao serem executados: 
+
+Questão a)
+[20]
+[10, 5]
+
+Questão b)
+[50]
+[10, 50]
+[30, 10, 40]
+
+Questão c)
+[10, 10, 10]
+
+Questão d)
+[12]
+[14, 13]
+
+Questão	e)
+[10, 20, 15]
+
+Questão f)
+[1]
+[5, 6, 1]

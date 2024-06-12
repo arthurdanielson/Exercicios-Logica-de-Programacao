@@ -1,0 +1,8 @@
+Arthur Danielson Viana
+12/06/2024
+
+3) Os pares de instruções abaixo produzem o mesmo resultado? 
+
+[true]
+[false]
+[false]
