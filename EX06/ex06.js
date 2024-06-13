@@ -6,20 +6,9 @@ Arthur Danielson Viana
 12/06/2024
 */
 
-let altura = document.querySelector("#in-altura");
-let largura = document.querySelector("#in-largura");
-let submit = document.querySelector("#btn-submit");
-let reset = document.querySelector("#btn-reset");
-let out = document.querySelector("#out");
+let altura = 10;
+let largura = 5;
 
-submit.addEventListener("click", () => {
-  let areaRetangulo = altura.value * largura.value;
+let areaRetangulo = altura * largura;
 
-  out.innerHTML = `Resultado: ${areaRetangulo}m2`;
-});
-
-reset.addEventListener("click", () => {
-  altura.value = "";
-  largura.value = "";
-  out.innerHTML = "";
-});
+console.log(areaRetangulo);

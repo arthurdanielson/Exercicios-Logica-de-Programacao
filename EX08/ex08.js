@@ -7,28 +7,15 @@ Arthur Danielson Viana
 12/06/2024
 */
 
-let inTotal = document.querySelector("#in-total");
-let inBranco = document.querySelector("#in-branco");
-let inNulo = document.querySelector("#in-nulo");
-let inValido = document.querySelector("#in-valido");
-let out = document.querySelector("#out");
-let btnSubmit = document.querySelector("#btn-submit");
-let btnReset = document.querySelector("#btn-reset");
+let totalVotos = 100;
+let votosBrancos = 10;
+let votosNulos = 5;
+let votosValidos = 75;
 
-btnSubmit.addEventListener("click", () => {
-  let percentualBranco = (inBranco.value / inTotal.value) * 100;
-  let percentualNulo = (inNulo.value / inTotal.value) * 100;
-  let percentualValido = (inValido.value / inTotal.value) * 100;
-  out.innerHTML = `
-  Branco: ${percentualBranco.toFixed(2)}%<br>
-  Nulo: ${percentualNulo.toFixed(2)}%<br>
-  Válido: ${percentualValido.toFixed(2)}%`;
-});
+let percentualBrancos = totalVotos * votosBrancos / 100;
+let percentualNulos = totalVotos * votosNulos / 100;
+let percentualValidos = totalVotos * votosValidos / 100;
 
-btnReset.addEventListener("click", () => {
-  inTotal.value = "";
-  inBranco.value = "";
-  inNulo.value = "";
-  inValido.value = "";
-  out.innerHTML = "";
-})
+console.log(`Brancos: ${percentualBrancos}%
+Nulos: ${percentualNulos}%
+Válidos: ${percentualValidos}%`);

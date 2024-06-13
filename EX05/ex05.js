@@ -5,6 +5,6 @@ Arthur Danielson Viana
 16/02/2024
 */
 
-let num = prompt("Digite um número: ");
+let num = 5;
 
 document.write(num - 1)

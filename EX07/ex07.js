@@ -5,25 +5,10 @@ dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 
 Arthur Danielson Viana
 12/06/2024
 */
+let ano = 17;
+let mes = 30;
+let dia = 12;
 
-let inAno = document.querySelector("#in-ano");
-let inMes = document.querySelector("#in-mes");
-let inDia = document.querySelector("#in-dia");
-let out = document.querySelector("#out");
-let btnSubmit = document.querySelector("#btn-submit");
-let btnReset = document.querySelector("#btn-reset");
+let dias = ano * 365 + mes * 30 + dia;
 
-btnSubmit.addEventListener("click", () => {
-  let ano = Number(inAno.value);
-  let mes = Number(inMes.value);
-  let dia = Number(inDia.value);
-  let dias = (ano * 365) + (mes * 30) + dia;
-  out.innerHTML = `Dias: ${dias}`;
-});
-
-btnReset.addEventListener("click", () => {
-  inAno.value = "";
-  inMes.value = "";
-  inDia.value = "";
-  out.innerHTML = "";
-})
+console.log(dias);

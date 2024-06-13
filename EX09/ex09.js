@@ -8,6 +8,6 @@ Arthur Danielson Viana
 let salario = 100;
 let reajuste = 10;
 
-let novoSalario = salario + (reajuste / salario * 100);
+let novoSalario = salario + salario * reajuste / 100;
 
 console.log(novoSalario)
