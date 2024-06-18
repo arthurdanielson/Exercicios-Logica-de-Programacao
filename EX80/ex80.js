@@ -17,6 +17,10 @@ for (let i = 0; i < 20; i++) {
   }
 }
 let maior = Math.max(...Q)
-let posicao = Q.indexOf(maior)
+let posicaoMaior = Q.indexOf(maior)
+let menor = Math.min(...Q)
+let posicaoMenor = Q.indexOf(menor)
 console.log("Maior elemento:", maior)
-console.log("Posição do maior elemento:", posicao)
+console.log("Posição do maior elemento:", posicaoMaior)
+console.log("Menor elemento:", menor)
+console.log("Posição do menor elemento:", posicaoMenor)
